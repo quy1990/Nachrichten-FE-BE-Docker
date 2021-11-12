@@ -103,3 +103,15 @@ Run all migrations:
 ```sh
 docker-compose run --rm artisan migrate
 ```
+
+Seed all tables:
+
+```sh
+docker-compose run --rm artisan migrate:refresh --seed
+```
+
+Seed 1 class TaggableSeeder:
+
+```sh
+docker-compose run --rm artisan db:seed --class=TaggableSeeder
+```
